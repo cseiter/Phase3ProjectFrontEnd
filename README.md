@@ -34,9 +34,10 @@ Frontend
             [x]badges container
             [x]badge "card"
     Extras
-        [] Add routes with filters
-		[] Routes are links in header
-		[] Present results in formatted tables/printable reports
+        [] Add routes with filters - removed, misunderstanding on concept
+		[] Routes are links in header - removed, misunderstanding on concept
+		[x] Present results in formatted tables/printable reports
+        [] add multiple scouts that can be chosen with a dropdown
 
 Error fixes:
     bundle install errored out while installing pg (1.2.3), had to run "sudo apt-get install libpq-dev" to resolve.
