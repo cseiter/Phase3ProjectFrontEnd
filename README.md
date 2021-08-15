@@ -28,11 +28,11 @@ Frontend
     Design
         [x] app name for header
         [] build out scouts page
-            scouts container
-            scout "card"
+            []scouts container
+            []scout "card"
         [] build out badges page
-            badges container
-            badge "card"
+            []badges container
+            []badge "card"
     Extras
         [] Add routes with filters
 		[] Routes are links in header
