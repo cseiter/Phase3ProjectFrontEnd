@@ -1,5 +1,6 @@
 import './App.css';
 import ScoutContainer from './components/ScoutContainer/ScoutContainer';
+import BadgeContainer from './components/BadgeContainer/BadgeContainer';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         Scouts BSA Badge Tracker
       </header>
       <ScoutContainer />
+      <BadgeContainer />
     </div>
   );
 }
