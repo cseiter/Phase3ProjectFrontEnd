@@ -12,8 +12,8 @@ export default function ScoutContainer() {
     const badgesList = badges.map(badge =>
     <li>{badge.badges_name}
     <ul>
-    <li>Is this for Eagle? {badges.badges_is_eagle}</li>
-    <li>Is this badge earned? {badges.badges_is_earned}</li>
+    <li>Is this required for eagle? {badge.badges_is_eagle}</li>
+    <li>Is this badge earnerd? {badge.badges_is_earned}</li>
     </ul>
     </li>
     )
