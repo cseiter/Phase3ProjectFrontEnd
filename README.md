@@ -17,14 +17,22 @@ Backend
 
 
 Frontend
-	[] Fork template repo/npx it
-	[] Create new repo
+	[x] Fork template repo/npx it
+	[x] Create new repo
     [] Watch videos again to refresh memory and code along changes
     Requirements
-	    [] READ all data
-	    [] CREATE new data entry
+	    [] READ all data (/badges:get,/scouts:get)
+	    [] CREATE new data entry(/badges:post,/scouts:post)
 	    [] UPDATE existing entry
 	    [] DELETE existing entry
+    Design
+        [x] app name for header
+        [] build out scouts page
+            scouts container
+            scout "card"
+        [] build out badges page
+            badges container
+            badge "card"
     Extras
         [] Add routes with filters
 		[] Routes are links in header
