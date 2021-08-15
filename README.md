@@ -21,18 +21,18 @@ Frontend
 	[x] Create new repo
     [] Watch videos again to refresh memory and code along changes
     Requirements
-	    [] READ all data (/badges:get,/scouts:get)
+	    [x] READ all data (/badges:get,/scouts:get)
 	    [] CREATE new data entry(/badges:post,/scouts:post)
 	    [] UPDATE existing entry
 	    [] DELETE existing entry
     Design
         [x] app name for header
-        [] build out scouts page
-            []scouts container
-            []scout "card"
-        [] build out badges page
-            []badges container
-            []badge "card"
+        [x] build out scouts page
+            [x]scouts container
+            [x]scout "card"
+        [x] build out badges page
+            [x]badges container
+            [x]badge "card"
     Extras
         [] Add routes with filters
 		[] Routes are links in header
