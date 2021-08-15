@@ -8,10 +8,12 @@ function App() {
       <header className="App-header">
         Scouts BSA Badge Tracker
       </header>
-      <header className="scout-header">
+      <header className="scout">
         <ScoutContainer />
       </header>
+      <section className="badges">
       <BadgeContainer />
+      </section>
     </div>
   );
 }
