@@ -30,10 +30,7 @@ export default function ScoutContainer() {
     
     return (
         <div>
-            <h1>Badges</h1>
-            <ul>
-                {badgesList}
-            </ul>
+            {badgesList}
         </div>
     )
 }

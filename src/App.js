@@ -2,7 +2,6 @@ import './App.css';
 import ScoutContainer from './components/ScoutContainer/ScoutContainer';
 import BadgeContainer from './components/BadgeContainer/BadgeContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from 'react-bootstrap';
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
         <ScoutContainer />
       </header>
       <section className="badges">
-      <BadgeContainer />
+      <BadgeContainer fluid />
       </section>
     </div>
   );
