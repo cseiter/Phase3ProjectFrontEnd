@@ -1,4 +1,5 @@
 import './App.css';
+import ScoutContainer from './components/ScoutContainer/ScoutContainer';
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <header className="App-header">
         Scouts BSA Badge Tracker
       </header>
+      <ScoutContainer />
     </div>
   );
 }
