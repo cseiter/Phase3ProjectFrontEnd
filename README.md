@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+Merit Badge Tracker
+    One scout can have many merit badges
+    One merit badge can have many scouts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Backend
+	[x] Fork template repo
+	[x] Create new repo
+    [] Watch videos again to refresh memory and code along changes
+	[x] Create seed data
+    [x] Table design
+        scouts
+            scouts_first_name(string),scouts_last_name(string),scouts_troop(int),ID
+        badges
+            badges_name(string),badges_is_earned(boolean),badges_is_eagle(boolean),ID
+    [x] test commands in rake console successful in pulling seed data
+    [x] build out routes and logic
 
-## Available Scripts
 
-In the project directory, you can run:
+Frontend
+	[] Fork template repo/npx it
+	[] Create new repo
+    [] Watch videos again to refresh memory and code along changes
+    Requirements
+	    [] READ all data
+	    [] CREATE new data entry
+	    [] UPDATE existing entry
+	    [] DELETE existing entry
+    Extras
+        [] Add routes with filters
+		[] Routes are links in header
+		[] Present results in formatted tables/printable reports
 
-### `npm start`
+Error fixes:
+    bundle install errored out while installing pg (1.2.3), had to run "sudo apt-get install libpq-dev" to resolve.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    gem file missing sql requirement and database.yml not having sqlite3 as database caused migrations to fail.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    boolean items in seed failing on using "True" "False", read up a bit and it was syntax error, ended up using 1 and 0 in seed
