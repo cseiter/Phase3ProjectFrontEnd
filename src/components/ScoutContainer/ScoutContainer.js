@@ -9,14 +9,11 @@ export default function ScoutContainer() {
 
     const [scouts,setScouts] = useState([]);
 
-    const scoutsList = scouts.map(scout => <li>{scout.scouts_f_name} {scout.scouts_l_name}</li>)
+    const scoutsList = scouts.map(scout => <p>{scout.scouts_f_name} {scout.scouts_l_name}</p>)
     
     return (
         <div>
-            <h1>Scouts</h1>
-            <ul>
-                {scoutsList}
-            </ul>
+            <h1>{scoutsList}</h1>
         </div>
     )
 }
