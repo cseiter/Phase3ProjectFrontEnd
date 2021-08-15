@@ -1,7 +1,8 @@
 import './App.css';
 import ScoutContainer from './components/ScoutContainer/ScoutContainer';
 import BadgeContainer from './components/BadgeContainer/BadgeContainer';
-import Card from 'react-bootstrap/Card';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from 'react-bootstrap';
 
 function App() {
   return (
