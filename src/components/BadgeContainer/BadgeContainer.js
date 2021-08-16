@@ -1,5 +1,6 @@
 import React,{ useState, useEffect } from 'react';
 import Card from 'react-bootstrap/esm/Card';
+import Button from 'react-bootstrap/Button';
 
 export default function ScoutContainer() {
     useEffect(() => {
@@ -11,15 +12,9 @@ export default function ScoutContainer() {
     const [badges,setBadges] = useState([]);
 
     const badgesList = badges.map(badge =>
-    //<li>{badge.badges_name}
-    //<ul>
-    //<li>Is this required for eagle? {badge.badges_is_eagle}</li>
-    //<li>Is this badge earnerd? {badge.badges_is_earned}</li>
-    //</ul>
-    //</li>
-    <Card style={{ width: '20rem'}}>
+    <Card style={{ width: '25rem'}}>
         <Card.Body>
-            <Card.Title>{badge.badges_name}</Card.Title>
+            <Card.Title>{badge.badges_name}<Button variant="danger" className="ml-auto">X</Button></Card.Title>
             <Card.Header>Is this required for Eagle?</Card.Header>
             <Card.Text>{badge.badges_is_eagle}</Card.Text>
             <Card.Header>Is this earned?</Card.Header>
