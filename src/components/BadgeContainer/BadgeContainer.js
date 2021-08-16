@@ -14,12 +14,13 @@ export default function ScoutContainer() {
     const badgesList = badges.map(badge =>
     <Card style={{ width: '25rem'}}>
         <Card.Body>
-            <Card.Title>{badge.badges_name}<Button variant="danger" className="ml-auto">X</Button></Card.Title>
+            <Card.Title>{badge.badges_name}<Button variant="danger">X</Button></Card.Title>
             <Card.Header>Is this required for Eagle?</Card.Header>
             <Card.Text>{badge.badges_is_eagle}</Card.Text>
             <Card.Header>Is this earned?</Card.Header>
             <Card.Text>{badge.badges_is_earned}</Card.Text>
         </Card.Body>
+        <Card.Footer><Button variant="success">Update</Button></Card.Footer>
     </Card>
     )
     
