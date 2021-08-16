@@ -1,10 +1,23 @@
 import React,{ useState, useEffect } from 'react';
 import Card from 'react-bootstrap/esm/Card';
 import Button from 'react-bootstrap/Button';
+import CreateBadgeForm from './CreateBadgeForm';
 
 function deleteBadge () {
     alert("deleting badge!");
 }
+
+function createBadge(badgeDetails) {
+    const newBadge = {
+      ...badgeDetails
+    };
+  
+    fetch('localhost:9393/badges', {
+      method: "POST",
+      body: JSON.stringify(newBadge),
+    })
+      .then((res) => res.json())
+  }
 
 export default function ScoutContainer() {
     useEffect(() => {
@@ -30,6 +43,9 @@ export default function ScoutContainer() {
     
     return (
         <div>
+            <section className="create_badges">
+                <CreateBadgeForm createBadge={createBadge}/>
+            </section>
             {badgesList}
         </div>
     )

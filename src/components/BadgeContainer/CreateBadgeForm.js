@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
-export default function BadgeCreateForm({createBadge}) {
+export default function CreateBadgeForm({createBadge}) {
     const [formData, setFormData] = useState({badges_name: "", badges_is_earned: "", badges_is_eagle: "", scouts_id: null})
 
     function handleChange(e) {
@@ -11,9 +11,8 @@ export default function BadgeCreateForm({createBadge}) {
     function handleSubmit(e) {
         e.preventDefault()
         createBadge(formData)
-        setFormData({name: "", focus: ""})
+        setFormData({badges_name: "", badges_is_earned: "", badges_is_eagle: "", scouts_id: null})
     }
-
 
     return (
         <form>
