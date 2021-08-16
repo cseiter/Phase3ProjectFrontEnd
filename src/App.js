@@ -1,6 +1,7 @@
 import './App.css';
 import ScoutContainer from './components/ScoutContainer/ScoutContainer';
 import BadgeContainer from './components/BadgeContainer/BadgeContainer';
+import CreateBadge from './components/BadgeContainer/CreateBadge';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
       <header className="scout">
         <ScoutContainer />
       </header>
+      <section className="create_badges">
+        <CreateBadge />
+      </section>
       <section className="badges">
       <BadgeContainer fluid />
       </section>

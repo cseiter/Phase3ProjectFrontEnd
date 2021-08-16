@@ -19,9 +19,9 @@ export default function BadgeCreateForm({createBadge}) {
         <form>
             <label>Badge Name(separate with underscores): </label>
             <input onChange={handleChange} name="badges_name" value={formData.badges_name}/>
-            <label>Earned?(yes/no: </label>
+            <label>Earned?(yes/no): </label>
             <input onChange={handleChange} name="badges_is_earned" value={formData.badges_is_earned}/>
-            <label>Eagle?(yes/no: </label>
+            <label>Eagle?(yes/no): </label>
             <input onChange={handleChange} name="badges_is_eagle" value={formData.badges_is_eagle}/>
             <button onClick={handleSubmit}>Create Badge</button>
         </form>
