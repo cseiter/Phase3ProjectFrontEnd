@@ -3,8 +3,9 @@ import Card from 'react-bootstrap/esm/Card';
 import Button from 'react-bootstrap/Button';
 import CreateBadgeForm from './CreateBadgeForm';
 
-function deleteBadge () {
-    alert("deleting badge!");
+function deleteBadge(e) {
+    e.preventDefault();
+    alert(e.button.id)   
 }
 
 function createBadge(badgeDetails) {
@@ -37,7 +38,7 @@ export default function ScoutContainer() {
             <Card.Header>Is this earned?</Card.Header>
             <Card.Text>{badge.badges_is_earned}</Card.Text>
         </Card.Body>
-        <Card.Footer><Button variant="success">Update</Button></Card.Footer>
+        <Card.Footer><Button variant="success" id={badge.id}>Update</Button></Card.Footer>
     </Card>
     )
     

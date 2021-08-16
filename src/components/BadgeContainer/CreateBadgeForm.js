@@ -22,7 +22,7 @@ export default function CreateBadgeForm({createBadge}) {
             <input onChange={handleChange} name="badges_is_earned" value={formData.badges_is_earned}/>
             <label>Eagle?(yes/no): </label>
             <input onChange={handleChange} name="badges_is_eagle" value={formData.badges_is_eagle}/>
-            <button onClick={handleSubmit}>Create Badge</button>
+            <button onClick={handleSubmit}>Create Badge(gets error)</button>
         </form>
     )
 }
